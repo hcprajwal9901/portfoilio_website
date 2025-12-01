@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Section from './Section';
-import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   return (
