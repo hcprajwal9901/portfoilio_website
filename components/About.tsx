@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <img
             src="src/pics/pic.jpeg"
             alt="H C Prajwal"
-            className="rounded-2xl aspect-[3/4] object-fit shadow-2xl  shadow-accent/20 w-100"
+            className="rounded-2xl aspect-[3/4] object-fit shadow-2xl  shadow-accent/20 w-100 "
           />
         </div>
         <div className="md:col-span-3">
