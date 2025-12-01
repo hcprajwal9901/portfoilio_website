@@ -3,7 +3,7 @@ import type { Project } from './types';
 
 export const PERSONAL_INFO = {
   name: "H C Prajwal",
-  title: "Intern @ Elevate Labs",
+  title: "Software Developer",
   bio: "I'm a passionate intern specializing in building beautiful, functional, and scalable web applications with React, TypeScript, and modern web technologies. I love solving complex problems and creating exceptional user experiences.",
   email: "hcprajwal9901@gmail.com",
 };
