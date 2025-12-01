@@ -3,8 +3,8 @@ import type { Project } from './types';
 
 export const PERSONAL_INFO = {
   name: "H C Prajwal",
-  title: "Software Developer",
-  bio: "I'm a passionate intern specializing in building beautiful, functional, and scalable web applications with React, TypeScript, and modern web technologies. I love solving complex problems and creating exceptional user experiences.",
+  title: "Software Developer | DevOps Engineer | Hands-on with Docker, Terraform, Jenkins, GitHub Actions | Node.js & React Projects",
+  bio: "I'm a passionate intern specializing in building beautiful, functional, and scalable web applications with React, Python, and modern web technologies. I love solving complex problems and creating exceptional user experiences.",
   email: "hcprajwal9901@gmail.com",
 };
 
