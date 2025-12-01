@@ -20,8 +20,12 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/portfoilio_website/assets/index-vIAAeMXq.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfoilio_website/assets/index-BHEjv66e.css">
+
+  <!-- Point at the source entry so Vite can build it -->
+  <script type="module" src="/index.tsx"></script>
+
+  <!-- Either import CSS from your entry (recommended) or reference the source CSS directly -->
+  <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-background text-text font-sans">
     <div id="root"></div>
