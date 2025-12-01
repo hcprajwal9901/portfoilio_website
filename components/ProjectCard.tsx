@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-primary rounded-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
       <div className="relative overflow-hidden aspect-video">
-        <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        <img src={image} alt={title} className="rounded-2xl aspect-[4/3] object-fit transition-transform duration-500 group-hover:scale-105" />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       <div className="p-6">

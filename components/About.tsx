@@ -9,9 +9,9 @@ const About: React.FC = () => {
       <div className="grid md:grid-cols-5 gap-12 items-center">
         <div className="md:col-span-2">
           <img
-            src="src/pics/pic.png"
+            src="src/pics/pic.jpeg"
             alt="H C Prajwal"
-            className="rounded-full aspect-square object-cover shadow-2xl"
+            className="rounded-2xl aspect-[3/4] object-fit shadow-2xl  shadow-accent/20 w-100"
           />
         </div>
         <div className="md:col-span-3">

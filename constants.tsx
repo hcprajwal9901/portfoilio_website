@@ -20,9 +20,9 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: "Face recognition System for Home Security",
+    title: "Face Recognition System for Home Security",
     description: "Developed a face recognition system for home security using computer vision techniques. Implemented real-time video processing and facial recognition through CCTV input with high accuracy.",
-    image: "src/pics/fdsh.png",
+    image: "src/pics/fdsh2.png",
     tags: ["PythonProgramming", "SQL", "OpenCV", "Yolo", "ArtificialIntelligence", "ComputerVision", "MachineLearning","training","DataVisualization"],
     liveUrl: "#",
     codeUrl: "https://github.com/hcprajwal9901/face_recognition_for_home_cctv",
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "#"
   },
   {id: 4,
-    title: "personal portfolio website",
+    title: "Personal Portfolio Website",
     description: "Developed a personal portfolio website to showcase my projects and skills using React,NodeJS, TypeScript, and Tailwind CSS.",
     image: "src/pics/pp.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "JavaScript", "Web Development"],
