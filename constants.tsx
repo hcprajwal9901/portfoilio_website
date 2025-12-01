@@ -48,7 +48,7 @@ export const SKILLS = [
   "PythonProgramming","SQL",
   "React",
   "JavaScript (ES6+)",
-  "Next.js",
+  "Node.js",
   "HTML5 & CSS",
   "REST APIs",
   "Git & GitHub",
