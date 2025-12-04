@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
     description: " Built an Al-powered virtual mechanic that diagnoses common vehicle issues based on user inputs like text, sound, image, video analysis.  Integrated NLP models to interpret user queries and provide troubleshooting steps. Designed a responsive interface to simulate real-time vehicle fault detection and solutions ",
     image: "src/pics/vm.png",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    liveUrl: "#",
+    liveUrl: "https://hcprajwal9901.github.io/virtual_mechanic_AI/",
     codeUrl: "https://github.com/hcprajwal9901/virtual_mechanic",
   },
   {
