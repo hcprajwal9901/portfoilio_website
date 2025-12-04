@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     image: "src/pics/vm.png",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     liveUrl: "https://hcprajwal9901.github.io/virtual_mechanic_AI/",
-    codeUrl: "https://github.com/hcprajwal9901/virtual_mechanic",
+    codeUrl: "https://github.com/hcprajwal9901/virtual_mechanic_AI",
   },
   {
     id: 2,
