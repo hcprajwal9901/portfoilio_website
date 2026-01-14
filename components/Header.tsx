@@ -1,72 +1,81 @@
-
 import React, { useState, useEffect } from 'react';
-import { PERSONAL_INFO } from '../constants';
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const navLinks = ['about', 'projects', 'contact'];
-
-  const handleScroll = () => {
-    if (window.scrollY > 10) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-  
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
     };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
-  };
+  const navItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' },
+  ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/80 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
-      <nav className="container mx-auto max-w-screen-xl px-6 py-4 flex justify-between items-center">
-        <a href="#home" onClick={() => scrollToSection('home')} className="text-2xl font-bold tracking-tighter text-text hover:text-accent transition-colors">
-          {PERSONAL_INFO.name.split(' ')[0]}<span className="text-accent">.</span>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4 bg-background/80 backdrop-blur-lg border-b border-glass-border' : 'py-6 bg-transparent'
+        }`}
+    >
+      <div className="container mx-auto px-6 flex justify-between items-center">
+        <a href="#home" className="text-2xl font-display font-bold tracking-tighter text-white hover:text-accent transition-colors">
+          HCP<span className="text-accent-secondary">.</span>
         </a>
-        
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map(link => (
-            <button key={link} onClick={() => scrollToSection(link)} className="capitalize text-text-secondary hover:text-accent transition-colors duration-300">
-              {link}
-            </button>
-          ))}
-        </div>
 
-        {/* Mobile Nav Toggle */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-text focus:outline-none">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-              )}
-            </svg>
-          </button>
-        </div>
-      </nav>
-      
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-primary shadow-xl">
-          <div className="flex flex-col items-center px-4 pt-2 pb-4 space-y-4">
-            {navLinks.map(link => (
-              <button key={link} onClick={() => scrollToSection(link)} className="capitalize w-full text-center py-2 text-text-secondary hover:text-accent hover:bg-secondary rounded-md transition-colors duration-300">
-                {link}
-              </button>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-text-secondary hover:text-accent transition-colors relative group"
+            >
+              {item.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
+          <a
+            href="mailto:hcprajwal9901@gmail.com"
+            className="bg-accent text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-accent/20"
+          >
+            Hire Me
+          </a>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            {isMobileMenuOpen ? <line x1="18" y1="6" x2="6" y2="18"></line> : <line x1="3" y1="12" x2="21" y2="12"></line>}
+            {!isMobileMenuOpen && <line x1="3" y1="6" x2="21" y2="6"></line>}
+            {!isMobileMenuOpen && <line x1="3" y1="18" x2="21" y2="18"></line>}
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Nav */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-primary border-b border-glass-border animate-fade-in-up">
+          <div className="flex flex-col p-6 gap-4">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-lg font-medium text-text-secondary hover:text-accent"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
             ))}
           </div>
         </div>
