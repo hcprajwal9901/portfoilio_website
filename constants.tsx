@@ -2,8 +2,8 @@ import type { Project, Experience } from './types';
 
 export const PERSONAL_INFO = {
   name: "H C Prajwal",
-  title: "AI & ML Intern | Backend Developer",
-  bio: "Ambitious Information Science Engineer and AI Intern specializing in building intelligent systems, scalable backends, and automated CI/CD pipelines. Practical experience with FastAPI, LLMs, Docker, and Kubernetes.",
+  title: "R&D Intern @ IIT-Hyderabad | AI/ML Engineer | UAV Software Developer",
+  bio: "Information Science Engineer specializing in autonomous systems, AI/ML pipelines, and intelligent software development. Currently building UAV ground control software and perception models at TiHAN IIT-Hyderabad. Expertise in computer vision, LLMs, and scalable backend systems.",
   email: "hcprajwal9901@gmail.com",
 };
 
@@ -53,34 +53,34 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    company: "Networkers Home",
-    position: "AI Intern",
-    period: "Dec 2025 – Present",
+    company: "TiHAN IIT-Hyderabad",
+    position: "R&D Intern",
+    period: "Feb 2026 – Present",
     description: [
-      "Developed an AI-powered FastAPI backend code generator for LLM tasks, supporting rapid scaffolding and deployment.",
-      "Contributed to an AI-based personalized tutoring web app with STT/TTS pipelines for voice-driven learning.",
-      "Utilized Supabase for data storage, metadata management, and scalable backend integration."
+      "Designing and developing UAV ground control software (inspired by QGroundControl and ArduPilot) with modules for mission planning, telemetry, parameter management, and real-time visualization.",
+      "Building AI/ML data pipelines for large-scale image annotation and semantic segmentation to train and evaluate perception models for autonomous drones.",
+      "Integrating computer vision and ML workflows into UAV software systems, collaborating with R&D teams to test, debug, and optimize autonomy-related components."
     ]
   },
   {
     id: 2,
-    company: "Elevate Labs",
-    position: "DevOps Intern",
-    period: "Sep 2025 – Nov 2025",
+    company: "Networkers Home",
+    position: "AI Intern",
+    period: "Dec 2025 – Feb 2026",
     description: [
-      "Designed and implemented CI/CD pipelines using GitHub Actions, Docker, and Jenkins.",
-      "Managed containerized applications using Docker and Kubernetes (Minikube) for local orchestration.",
-      "Automated portfolio deployment via GitHub Pages CI/CD.",
-      "Monitored system performance using Netdata in a Dockerized environment."
+      "Built a time-based WireGuard access control platform enabling secure, scheduled VPN access management.",
+      "Built AI developer tools including an AI tools marketplace and a FastAPI backend code generator optimized for LLM workflows.",
+      "Implemented Speech-to-Text and Text-to-Speech pipelines for an AI-powered personalized tutoring web application.",
+      "Used Supabase for scalable data storage and backend integration."
     ]
   }
 ];
 
 export const SKILLS = [
-  "Python", "FastAPI", "React", "TypeScript", "Node.js",
-  "LangChain", "PyTorch", "TensorFlow", "Generative AI", "transformers", "LLM", "RAG", "VectorDB",
-  "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Supabase",
-  "SQL", "PostgreSQL", "Git", "UI/UX Design"
+  "Python", "C++", "SQL", "FastAPI", "Flask", "Node.js", "Next.js", "React", "TypeScript",
+  "PyTorch", "TensorFlow", "PySpark", "LangChain", "Transformers", "Gen-AI", "NLP", "RAG", "Computer Vision",
+  "Data Annotation", "Semantic Segmentation", "Docker", "Kubernetes", "GitHub Actions", "Jenkins",
+  "AWS", "Azure", "Supabase", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Plotly", "Git", "MySQL"
 ];
 
 export const SOCIAL_LINKS = {
