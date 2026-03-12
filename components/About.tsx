@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Section from './Section';
 import { SKILLS } from '../constants';
@@ -15,17 +14,34 @@ const About: React.FC = () => {
             className="rounded-[2.5rem] aspect-[4/5] object-cover shadow-2xl shadow-accent/20 w-full relative z-10"
           />
         </div>
+
         <div className="md:col-span-3">
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-8">About Me</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-8">
+            About Me
+          </h2>
+
           <p className="text-text-secondary text-lg md:text-xl mb-10 leading-relaxed">
-            Hello! I'm an <span className="text-white font-semibold">Ambitious Machine Learning and DevOps Engineer</span> with a passion for building intelligent, scalable systems.
-            With a strong foundation in Python, TensorFlow, and React, I specialize in bridging the gap between data-driven insights and production-ready applications.
-            I'm dedicated to continuous learning and driving impactful, data-driven outcomes in every project I undertake.
+            Hello! I'm an{" "}
+            <span className="text-white font-semibold">Ambitious UI Developer</span>{" "}
+            passionate about building modern, responsive, and high-performance web interfaces.
+            With a strong foundation in React, JavaScript, TypeScript, HTML, and CSS, I focus on
+            creating clean, scalable, and user-friendly applications. I enjoy transforming UI/UX
+            designs into efficient frontend code and building interactive experiences that deliver
+            seamless user experiences across devices. I am constantly learning new frontend
+            technologies and striving to create impactful digital products through thoughtful
+            interface design and performance optimization.
           </p>
-          <h3 className="text-2xl font-display font-semibold mb-6 text-white">My Skills</h3>
+
+          <h3 className="text-2xl font-display font-semibold mb-6 text-white">
+            My Skills
+          </h3>
+
           <div className="flex flex-wrap gap-3">
             {SKILLS.map(skill => (
-              <span key={skill} className="bg-secondary text-text-secondary py-2 px-5 rounded-full text-sm font-bold tracking-wide hover:bg-accent hover:text-white transition-all cursor-default shadow-sm border border-glass-border">
+              <span
+                key={skill}
+                className="bg-secondary text-text-secondary py-2 px-5 rounded-full text-sm font-bold tracking-wide hover:bg-accent hover:text-white transition-all cursor-default shadow-sm border border-glass-border"
+              >
                 {skill}
               </span>
             ))}

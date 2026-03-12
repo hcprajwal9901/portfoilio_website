@@ -2,8 +2,8 @@ import type { Project, Experience } from './types';
 
 export const PERSONAL_INFO = {
   name: "H C Prajwal",
-  title: "R&D Intern @ IIT-Hyderabad | AI/ML Engineer | UAV Software Developer",
-  bio: "Information Science Engineer specializing in autonomous systems, AI/ML pipelines, and intelligent software development. Currently building UAV ground control software and perception models at TiHAN IIT-Hyderabad. Expertise in computer vision, LLMs, and scalable backend systems.",
+  title: "R&D Intern @ IIT-Hyderabad | UI Developer | UAV Software Developer",
+  bio: "UI Developer with experience building responsive and scalable web applications using React.js, TypeScript, HTML, andmodern frontend frameworks. Skilled in translating UI/UX designs into high-performance interfaces, managing state with Redux, and optimizing application performance. Experienced in collaborating with backend teams to deliver maintainable and user-centric applications.",
   email: "hcprajwal9901@gmail.com",
 };
 
